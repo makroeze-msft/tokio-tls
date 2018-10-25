@@ -19,10 +19,10 @@ appveyor = { repository = "alexcrichton/tokio-tls" }
 
 [dependencies]
 futures = "0.1.11"
-native-tls = "0.1"
-tokio-core = "0.1.6"
-tokio-io = "0.1"
-tokio-proto = { version = "0.1", optional = true }
+native-tls = {path = "../native-tls"}
+tokio-core = {path = "../tokio-core"}
+tokio-io = {path = "../tokio/tokio-io"}
+tokio-proto = { path = "../tokio-proto", optional = true }
 
 [dev-dependencies]
 cfg-if = "0.1"
